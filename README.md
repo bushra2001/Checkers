@@ -1,5 +1,5 @@
 # Checkers
-![alt text](~/Pictures/)
+![plot](/Pictures/checkers_interface.png)
 ## GAME:
 ### The board:
 is consisted of 8 * 8 rows and columns. 

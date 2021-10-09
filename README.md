@@ -1,5 +1,6 @@
 # Checkers
-![plot](/Pictures/checkers_interface.png)
+![checkers_interface](https://user-images.githubusercontent.com/61081924/136661906-69155ae5-f495-405c-9f94-adb0dc463dff.png)
+
 ## GAME:
 ### The board:
 is consisted of 8 * 8 rows and columns. 
@@ -73,3 +74,5 @@ to a specified depth. We consider depths of 4 or 5 to be beginner level, depths 
 method is to allow the computer to search for a specified time limit. We consider this to be the better method, since depending on the state of the game and 
 number of legal moves in each position, choosing a specific depth can lead to moves of very varying durations. At times, low depth cutoffs are really unnecessary, especially in situations when there are multiple forced moves in a row. When searching for a specified time limit, the computer starts off with an alpha-beta search of depth 4, and then uses iterative deepening, increasing the depth by 1 for each search. If the time limit runs out mid-search, the search to 
 the current depth is halted, and the move given by the previous search is used. In almost all cases, the search to each depth takes more time than the searches toall previous (smaller) depths combined, so at most one depth (and often none) is lost due to the extra time used for previous searches done by iterative deepening. Also, if after a search to a given depth, more than half of the time limit has expired, the best move based on that depth is returned without starting the next level of search, since it is highly unlikely that the new search would have time to complete anyway. We find that giving the computer 30 seconds per move leads to a challenging game, although that sometimes needs to be increased in certain end game situations for the computer to correctly force pieces out of corners.
+
+![checkers_1](https://user-images.githubusercontent.com/61081924/136661918-daf53ae3-e2c7-4a7c-a203-5c93cc4746d4.png)
